@@ -188,6 +188,7 @@ function getPageSections($arr = false)
 function getImage($image, $size = null)
 {
     $clean = '';
+    $image = "public/".$image;
     if (file_exists($image) && is_file($image)) {
         return url('/').'/'.$image. $clean;
     }

@@ -18,60 +18,60 @@ trait FileInfo
 
     public function fileInfo(){
 		$data['gateway'] = [
-            'path'       => 'public/assets/images/gateway',
+            'path'       => 'assets/images/gateway',
             'size'       => '800x800',
         ];
         $data['withdrawVerify'] = [
-            'path'=>'public/assets/images/verify/withdraw'
+            'path'=>'assets/images/verify/withdraw'
         ];
         $data['depositVerify'] = [
-            'path'      =>'public/assets/images/verify/deposit'
+            'path'      =>'assets/images/verify/deposit'
         ];
         $data['verify'] = [
-            'path'      =>'public/assets/verify'
+            'path'      =>'/assets/verify'
         ];
         $data['default'] = [
-            'path'      => 'public/assets/images/default.png',
+            'path'      => 'assets/images/default.png',
         ];
         $data['withdrawMethod'] = [
-            'path'      => 'public/assets/images/withdraw/method',
+            'path'      => 'assets/images/withdraw/method',
             'size'      => '800x800',
         ];
         $data['ticket'] = [
-            'path'      => 'public/assets/support',
+            'path'      => 'assets/support',
         ];
         $data['language'] = [
-            'path'      => 'public/assets/images/lang',
+            'path'      => 'assets/images/lang',
             'size'      => '64x64',
         ];
         $data['logoIcon'] = [
-            'path'      => 'public/assets/images/logoIcon',
+            'path'      => 'assets/images/logoIcon',
         ];
         $data['favicon'] = [
             'size'      => '128x128',
         ];
         $data['extensions'] = [
-            'path'      => 'public/assets/images/extensions',
+            'path'      => 'assets/images/extensions',
             'size'      => '36x36',
         ];
         $data['seo'] = [
-            'path'      => 'public/assets/images/seo',
+            'path'      => 'assets/images/seo',
             'size'      => '1180x600',
         ];
         $data['userProfile'] = [
-            'path'      =>'public/assets/images/user/profile',
+            'path'      =>'assets/images/user/profile',
             'size'      =>'350x300',
         ];
         $data['adminProfile'] = [
-            'path'      =>'public/assets/viser_admin/images/profile',
+            'path'      =>'assets/viser_admin/images/profile',
             'size'      =>'400x400',
         ];
         $data['receptionistProfile'] = [
-            'path'      =>'public/assets/viser_admin/images/profile',
+            'path'      =>'assets/viser_admin/images/profile',
             'size'      =>'400x400',
         ];
         $data['roomTypeImage'] = [
-            'path'      =>'public/assets/images/roomType',
+            'path'      =>'assets/images/roomType',
             'size'      =>'1000x500',
         ];
         return $data;

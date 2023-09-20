@@ -111,7 +111,7 @@ class GeneralSettingController extends Controller
                 if (!file_exists($path)) {
                     mkdir($path, 0755, true);
                 }
-                Image::make($request->logo)->save($path . '/logo.png');
+                Image::make($request->logo)->save(public_path($path) . '/logo.png');
             } catch (\Exception $exp) {
                 $notify[] = ['error', 'Couldn\'t upload the logo'];
                 return back()->withNotify($notify);
