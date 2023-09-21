@@ -125,7 +125,7 @@ class RoomTypeController extends Controller
 
     protected function insertImages($request, $roomType)
     {
-        $path = getFilePath('roomTypeImage');
+        $path = public_path(getFilePath('roomTypeImage'));
         $this->removeImages($request, $roomType, $path);
 
         if ($request->hasFile('images')) {
