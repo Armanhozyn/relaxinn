@@ -124,7 +124,7 @@ class GeneralSettingController extends Controller
                 if (!file_exists($path)) {
                     mkdir($path, 0755, true);
                 }
-                Image::make($request->logo_dark)->save($path . '/logo_dark.png');
+                Image::make($request->logo_dark)->save(public_path($path) . '/logo_dark.png');
             } catch (\Exception $exp) {
                 $notify[] = ['error', 'Couldn\'t upload the logo'];
                 return back()->withNotify($notify);
@@ -138,7 +138,7 @@ class GeneralSettingController extends Controller
                     mkdir($path, 0755, true);
                 }
                 $size = explode('x', getFileSize('favicon'));
-                Image::make($request->favicon)->resize($size[0], $size[1])->save($path . '/favicon.png');
+                Image::make($request->favicon)->resize($size[0], $size[1])->save(public_path($path) . '/favicon.png');
             } catch (\Exception $exp) {
                 $notify[] = ['error', 'Couldn\'t upload the favicon'];
                 return back()->withNotify($notify);
