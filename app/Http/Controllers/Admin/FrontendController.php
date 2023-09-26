@@ -116,7 +116,7 @@ class FrontendController extends Controller
             $inputContentValue['image'] = @$content->data_values->image;
             if ($request->hasFile('image_input')) {
                 try {
-                    $inputContentValue['image'] = fileUploader($request->image_input,getFilePath('seo'), getFileSize('seo'), @$content->data_values->image);
+                    $inputContentValue['image'] = fileUploader($request->image_input,public_path(getFilePath('seo')), getFileSize('seo'), @$content->data_values->image);
                 } catch (\Exception $exp) {
                     $notify[] = ['error', 'Couldn\'t upload the image'];
                     return back()->withNotify($notify);
